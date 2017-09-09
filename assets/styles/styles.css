@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e5f5fc;
+    font-family: Arial;
+    text-align: center;
+}
+
+header {
+    color: white;
+    background-image: url("../img/cnit_header.jpg");
+    background-size: cover;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.topMenu {
+    background-color: #7da9c4;
+    color: white;
+    height: 32px;
+    margin-bottom: 5px;
+    padding-top: 12px;
+}
+
+.topMenuList {
+    list-style-type: none;
+    text-align: center;
+}
+
+.topMenuItem {
+    display: inline;
+    margin: 10px;
+}
+
+.topMenuItem:first-child {
+    font-size: 20px;
+    color: white;
+}
+
+.topMenuItem a {
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+}
+
+.topMenuItem a:hover {
+    color: #013759;
+}
+
+.menuItem a {
+    display: block;
+    padding: 10px;
+    color: #013759;
+    font-size: 18px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.menuItem a:hover {
+    background-color: #7da9c4;
+    color: white;
+
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu .menuItem:first-child {
+    padding: 10px;
+    color: #013759;
+    font-size: 18px;
+    background-color: white;
+}
+
+.menu .menuItem {
+    margin: 5px;
+}
+
+.validationImage {
+    border: 0;
+    height: 31px;
+    width: 88px;
+}
+
+.validationLink {
+    margin: 5px;
+    text-decoration: none;
+}
+
+.underConstructionText {
+    color: #013759;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 50px;
+}
+
+.lastUpdated {
+    font-size: 14px;
+    margin: 5px;
+}
