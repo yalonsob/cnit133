@@ -1,5 +1,5 @@
-#CNIT133
+# CNIT133
 
--Homework for class 'CNIT133 - Interactive Webpages'
+- Homework for class 'CNIT133 - Interactive Webpages'
 
--Author: Yolanda Alonso Barbero
+- Author: Yolanda Alonso Barbero
