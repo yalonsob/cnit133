@@ -37,6 +37,8 @@ var $resultPositive = document.getElementById('result-positive');
 var $resultNegative = document.getElementById('result-negative');
 var $resultZeros = document.getElementById('result-zeros');
 var $btnShowResults = document.getElementById('btn-show-results');
+var $btnFadeResults = document.getElementById('btn-fade-results');
+var $tableResults = document.getElementById('table-results');
 
 function showResults() {
     var numbers = [
@@ -59,4 +61,11 @@ $btnShowResults.onclick = function (e) {
     e.preventDefault();
     showResults();
 };
+
+$(document).ready(function(){
+    $($btnFadeResults).click(function(e){
+        e.preventDefault();
+        $($tableResults).fadeToggle();
+    });
+});
 
