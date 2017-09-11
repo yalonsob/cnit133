@@ -105,3 +105,19 @@ h1 {
     font-size: 14px;
     margin: 5px;
 }
+
+.with-padding {
+    padding: 10px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    width: 100px;
+    border: 1px solid black;
+
+}
