@@ -112,12 +112,22 @@ h1 {
 
 table {
     margin: 0 auto;
-    border-collapse: collapse;
 }
 
-table th,
-table td {
+#table-results {
+    border-collapse: collapse;
+    text-align: right;
+}
+
+#table-results th,
+#table-results td {
     width: 100px;
     border: 1px solid black;
+    padding: 5px;
 
+}
+
+.dotted-table td {
+    border: 1px dotted black;
+    padding: 3px;
 }
