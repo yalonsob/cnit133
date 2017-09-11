@@ -72,13 +72,6 @@ h1 {
     list-style-type: none;
 }
 
-.menu .menuItem:first-child {
-    padding: 10px;
-    color: #013759;
-    font-size: 18px;
-    background-color: white;
-}
-
 .menu .menuItem {
     margin: 5px;
 }
