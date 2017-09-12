@@ -124,3 +124,24 @@ table {
     border: 1px dotted black;
     padding: 3px;
 }
+
+#instructions {
+    display: none;
+}
+
+.currency-table {
+    border-collapse: collapse;
+}
+
+.currency-table td {
+    border: 1px solid black;
+    padding: 5px;
+    width: 150px;
+    text-align: right;
+}
+
+.currency-table th {
+    border: 1px solid black;
+    padding: 5px;
+    width: 150px;
+}

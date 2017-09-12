@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/styles/styles.css">
     <title>
-        HW2.1
+        HW2.5
     </title>
 </head>
 <body>
@@ -25,11 +25,74 @@
         </ul>
     </div>
 
+    <button id="btn-show-instructions" class="with-padding">Show/Hide instructions</button>
+    <div id="instructions" class="with-padding">
+        <p>The foreign exchange rates on June 6, 2017</p>
+        <p>Enter a dollar amount in the table below to see the corresponding foreign exchange values</p>
+        <table class="currency-table with-padding">
+            <tr>
+                <th colspan="2">Monetary exchange rates</th>
+            </tr>
+            <tr>
+                <th>Currency</th>
+                <th>Rate</th>
+            </tr>
+            <tr>
+                <th>British pound (GBP)</th>
+                <td>0.77521</td>
+            </tr>
+            <tr>
+                <th>Canadian dollar (CAD)</th>
+                <td>1.34461</td>
+            </tr>
+            <tr>
+                <th>Euro (EUR)</th>
+                <td>0.88754</td>
+            </tr>
+            <tr>
+                <th>Japanese yen (JPY)</th>
+                <td>109.350</td>
+            </tr>
+            <tr>
+                <th>Mexican peso (MXN)</th>
+                <td>18.2806</td>
+            </tr>
+        </table>
+    </div>
+    <form class="with-padding">
+        <div>
+            <label for="usd-amount">Enter amount of U.S. dollars</label>
+            <input type="number" id="usd-amount" step="any" />
+        </div>
+        <button id="btn-show-values">Show values</button>
+    </form>
+    <table class="currency-table with-padding">
+        <tr>
+            <th>British pound (GBP)</th>
+            <td id="gbp-amount"></td>
+        </tr>
+        <tr>
+            <th>Canadian dollar (CAD)</th>
+            <td id="cad-amount"></td>
+        </tr>
+        <tr>
+            <th>Euro (EUR)</th>
+            <td id="eur-amount"></td>
+        </tr>
+        <tr>
+            <th>Japanese yen (JPY)</th>
+            <td id="jpy-amount"></td>
+        </tr>
+        <tr>
+            <th>Mexican peso (MXN)</th>
+            <td id="mxn-amount"></td>
+        </tr>
+    </table>
 
-    <footer>
+    <footer class="with-padding">
         <a class="validationLink"
            target="_blank"
-           href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~yalonsob/cnit133/hw21.html">
+           href="https://validator.w3.org/nu/?doc=https://hills.ccsf.edu/~yalonsob/cnit133/hw25.html">
             <img class="validationImage"
                  src="assets/img/vhtml5.png"
                  alt="Valid HTML5!"
@@ -37,11 +100,13 @@
         </a>
         <a class="validationLink"
            target="_blank"
-           href="https://jigsaw.w3.org/css-validator/validator?uri=https://hills.ccsf.edu/~yalonsob/cnit133/hw21.html">
+           href="https://jigsaw.w3.org/css-validator/validator?uri=https://hills.ccsf.edu/~yalonsob/cnit133/hw25.html">
             <img class="validationImage"
                  src="assets/img/vcss.gif"
                  alt="Valid CSS!"
             >
         </a>
     </footer>
+    <script src="assets/js/jquery-3.2.1.js"></script>
+    <script src="assets/js/hw2/hw25.js"></script>
 </body>

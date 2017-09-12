@@ -65,7 +65,7 @@ $btnShowResults.onclick = function (e) {
 $(document).ready(function(){
     $($btnFadeResults).click(function(e){
         e.preventDefault();
-        $($tableResults).fadeToggle();
+        $($tableResults).fadeTo("slow", 0.4);
     });
 });
 
