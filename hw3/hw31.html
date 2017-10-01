@@ -27,6 +27,71 @@
         </ul>
     </div>
 
+    <h1>Student Grades</h1>
+
+    <div class="with-padding">
+        <button id="btn-show-instructions" class="with-padding">Show/Hide instructions</button>
+        <div id="instructions" class="with-padding">
+            The following webpage contains the heading, Student Grades, and uses a script that inputs a student's
+            homework average, mid-term exam score, final exam score, and ACR (all as integers)'.<br>
+            Calculate the student's final average according to the formula:<br>
+            <b>final average = (.5 * hwAvg) + (.2 * midExam) + (.2 * finalExam) + (.1 * ACR)</b><br>
+        </div>
+    </div>
+
+    <form class="with-padding">
+        <table class="table-right-align">
+            <tr>
+                <td>
+                    <label for="homework-average">Homework Average</label>
+                </td>
+                <td>
+                    <input type="text" id="homework-average" onkeyup="processInput();" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mid-exam">Mid-term Exam Score</label>
+                </td>
+                <td>
+                    <input type="text" id="mid-exam" onkeyup="processInput();" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="final-exam">Final Exam Score</label>
+                </td>
+                <td>
+                    <input type="text" id="final-exam" onkeyup="processInput();" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="acr">ACR</label>
+                </td>
+                <td>
+                    <input type="text" id="acr" onkeyup="processInput();" />
+                </td>
+            </tr>
+        </table>
+
+        <div id="error-message" class="error-message">Invalid input</div>
+        <table class="table-border table-right-align">
+            <tr>
+                <td>Final average</td>
+                <td id="final-average"></td>
+            </tr>
+            <tr>
+                <td>Final letter</td>
+                <td id="final-letter"></td>
+            </tr>
+        </table>
+
+        <div id="fail-message" class="error-message">Student must retake the course.</div>
+
+    </form>
+
+
 
     <footer>
         <a class="validationLink"
@@ -46,5 +111,6 @@
             >
         </a>
     </footer>
+    <script src="../assets/js/jquery-3.2.1.js"></script>
     <script src="../assets/js/hw3/hw31.js"></script>
 </body>

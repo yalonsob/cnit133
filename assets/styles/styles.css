@@ -145,3 +145,22 @@ table {
     padding: 5px;
     width: 150px;
 }
+
+.table-right-align td, input {
+    text-align: right;
+}
+
+.table-border {
+    border-collapse: collapse;
+}
+
+.table-border td {
+    border: 1px solid black;
+    width: 120px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
