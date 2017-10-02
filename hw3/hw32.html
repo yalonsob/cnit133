@@ -35,7 +35,88 @@
     <input id="name" title="Please make sure that the person's name is spelled correctly" type="text" size="20" />
     <p class="with-padding">Input the number of items sold for each item number:</p>
 
-
+    <form class="with-padding">
+        <table class="table-right-align">
+            <tr>
+                <td>
+                    <label for="item-1">Item 1</label>
+                </td>
+                <td>
+                    <input type="text" id="item-1" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="item-2">Item 2</label>
+                </td>
+                <td>
+                    <input type="text" id="item-2" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="item-3">Item 3</label>
+                </td>
+                <td>
+                    <input type="text" id="item-3" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="item-4">Item 4</label>
+                </td>
+                <td>
+                    <input type="text" id="item-4" />
+                </td>
+            </tr>
+        </table>
+        <div id="error-message" class="error-message"> Check your input</div>
+        <div class="with-padding">
+            <button id="button-submit">Submit</button>
+            <button id="button-reset">Reset</button>
+        </div>
+    </form>
+    <table class="table-border">
+        <tr>
+            <th>Item #</th>
+            <th>Price</th>
+            <th>Number Sold</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>$239.99</td>
+            <td id="amount-1"></td>
+            <td id="total-1"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>$129.75</td>
+            <td id="amount-2"></td>
+            <td id="total-2"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>$99.95</td>
+            <td id="amount-3"></td>
+            <td id="total-3"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>$350.89</td>
+            <td id="amount-4"></td>
+            <td id="total-4"></td>
+        </tr>
+        <tr>
+            <td colspan="3">Total Amount Sold:</td>
+            <td id="total-sold"></td>
+        </tr>
+        <tr>
+            <td colspan="3">Total Weekly Earnings:</td>
+            <td id="total-earning"></td>
+        </tr>
+    </table>
+    <br>
 
     <footer>
         <a class="validationLink"

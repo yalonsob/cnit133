@@ -146,7 +146,7 @@ table {
     width: 150px;
 }
 
-.table-right-align td, input {
+.table-right-align th, td, input {
     text-align: right;
 }
 
