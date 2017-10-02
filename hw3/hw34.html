@@ -4,10 +4,39 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <title>
         HW3
     </title>
 </head>
+
+<script>
+
+    $(function() {
+
+        $( "#dialog" ).dialog({
+            autoOpen: false,
+            show: {
+                effect: "blind",
+                duration: 1000
+            },
+
+            hide: {
+                effect: "explode",
+                duration: 1000
+            }
+        });
+
+        $( "#opener" ).click(function() {
+            $( "#dialog" ).dialog( "open" );
+        });
+    });
+
+
+</script>
+
 <body>
     <header>
         <h1>CNIT 133 Homework 3 - Functions</h1>
@@ -26,6 +55,15 @@
             <li class="topMenuItem"><a href="hw37.html">Extra Credit</a></li>
         </ul>
     </div>
+
+    <button id="opener">Click for instructions</button>
+
+    <div id="dialog" title="Instructions">
+        <p>Input a five-digit integer (not starting with zero) to display if it is a palindrome, not a palindrome,
+            or an input error.</p>
+    </div>
+    <br><br>
+
 
     <form class="with-padding">
         <label for="input-integer">Integer</label>
