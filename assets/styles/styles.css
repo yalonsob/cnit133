@@ -172,3 +172,8 @@ table {
     color: black;
     margin: auto;
 }
+
+.temperature-result {
+    width: 120px;
+    background-color: white;
+}

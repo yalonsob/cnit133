@@ -27,7 +27,30 @@
         </ul>
     </div>
 
-
+    <form class="with-padding">
+        <table>
+            <tr>
+                <td><input type="text" id="from-fahrenheit" /></td>
+                <td><label for="from-fahrenheit">F</label></td>
+                <td><button id="button-to-celsius">To Celsius</button></td>
+                <td id="to-celsius" class="temperature-result"></td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <div class="error-message" id="error-to-celsius">Invalid Fahrenheit input</div>
+            </tr>
+            <tr>
+                <td><input type="text" id="from-celsius" /></td>
+                <td><label for="from-celsius">C</label></td>
+                <td><button id="button-to-fahrenheit">To Fahrenheit</button></td>
+                <td id="to-fahrenheit" class="temperature-result"><div></div></td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <div class="error-message" id="error-to-fahrenheit">Invalid Celsius input</div>
+            </tr>
+        </table>
+    </form>
 
     <footer>
         <a class="validationLink"
