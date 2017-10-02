@@ -164,3 +164,11 @@ table {
     font-size: 12px;
     display: none;
 }
+
+.balance-result {
+    width: 600px;
+    height: 200px;
+    background-color: white;
+    color: black;
+    margin: auto;
+}

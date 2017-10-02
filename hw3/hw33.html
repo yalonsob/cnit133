@@ -27,11 +27,63 @@
         </ul>
     </div>
 
+    <form class="with-padding">
+        <table class="table-right-align">
+            <tr>
+                <td>
+                    <label for="account">Account Number</label>
+                </td>
+                <td>
+                    <input type="text" id="account" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="balance">Balance at the beginning of the month</label>
+                </td>
+                <td>
+                    <input type="text" id="balance" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="charged">Total of all items charged by this customer this month</label>
+                </td>
+                <td>
+                    <input type="text" id="charged" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="credits">Total of all credits applied to this customer's account this month</label>
+                </td>
+                <td>
+                    <input type="text" id="credits" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="limit">Allowed credit limit</label>
+                </td>
+                <td>
+                    <input type="text" id="limit" />
+                </td>
+            </tr>
+        </table>
+        <div id="error-message" class="error-message"> Check your input</div>
+        <div class="with-padding">
+            <button id="button-calculate-balance">Calculate balance</button>
+            <button id="button-change-display">Change display</button>
+            <button id="button-reset">Reset</button>
+        </div>
+        <div id="balance-result" class="balance-result"></div>
+    </form>
+
 
     <footer>
         <a class="validationLink"
            target="_blank"
-           href="https://validator.w3.org/nu/hw3.html?doc=https://hills.ccsf.edu/~yalonsob/cnit133/hw3/hw3.html">
+           href="https://validator.w3.org/nu/hw3.html?doc=https://hills.ccsf.edu/~yalonsob/cnit133/hw3/hw33.html">
             <img class="validationImage"
                  src="../assets/img/vhtml5.png"
                  alt="Valid HTML5!"
@@ -39,12 +91,13 @@
         </a>
         <a class="validationLink"
            target="_blank"
-           href="https://jigsaw.w3.org/css-validator/validator?uri=https://hills.ccsf.edu/~yalonsob/cnit133/hw3/hw3.html">
+           href="https://jigsaw.w3.org/css-validator/validator?uri=https://hills.ccsf.edu/~yalonsob/cnit133/hw3/hw33.html">
             <img class="validationImage"
                  src="../assets/img/vcss.gif"
                  alt="Valid CSS!"
             >
         </a>
     </footer>
+    <script src="../assets/js/jquery-3.2.1.js"></script>
     <script src="../assets/js/hw3/hw33.js"></script>
 </body>
