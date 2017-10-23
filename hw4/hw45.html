@@ -28,8 +28,28 @@
     </div>
 
 
-    Under construction
+    <div class="with-padding">
+        <button id="btn-show-instructions" class="with-padding">Show/Hide instructions</button>
+        <div id="instructions" class="with-padding">
+            Introduce one of the following numbers 1, 2 or 3 to display one of the following lists: <br>
+            1. unordered list <br>
+            2. ordered number list <br>
+            3. ordered letter list
+        </div>
+    </div>
 
+    <div class="with-padding">
+        <form>
+            <label for="option">Introduce your number: </label>
+            <input type="text" id="option" onkeyup="processOption()"/>
+        </form>
+    </div>
+
+    <div id="error-invalid-input" class="error-message">
+        Please, enter a valid option: 1, 2 or 3.
+    </div>
+
+    <div class="with-padding" id="list-content" style="width:100px; margin: auto;"></div>
 
     <footer>
         <a class="validationLink"
@@ -49,5 +69,6 @@
             >
         </a>
     </footer>
+    <script src="../assets/js/jquery-3.2.1.js"></script>
     <script src="../assets/js/hw4/hw45.js"></script>
 </body>
