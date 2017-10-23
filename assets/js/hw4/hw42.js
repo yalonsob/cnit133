@@ -24,7 +24,7 @@ function calculateGross(hours, rate) {
     } else {
         gross = hours * rate;
     }
-    return gross;
+    return gross.toFixed(2);
 }
 
 function isEmployeesInputValid() {
