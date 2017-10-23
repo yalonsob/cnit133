@@ -27,9 +27,13 @@
         </ul>
     </div>
 
+    <form class="with-padding">
+        <label for="interest-rate">Introduce your interest rate (5-10): </label>
+        <input type="number" name="interest-rate" id="interest-rate" value="5" min="5" max="10"/>
+        <button id="button-calculate-interest">Calculate compound interest</button>
+    </form>
 
-    Under construction
-
+    <div class="with-padding" id="compound-interest"></div>
 
     <footer>
         <a class="validationLink"
@@ -49,5 +53,6 @@
             >
         </a>
     </footer>
+    <script src="../assets/js/jquery-3.2.1.js"></script>
     <script src="../assets/js/hw4/hw43.js"></script>
 </body>

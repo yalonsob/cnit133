@@ -192,5 +192,8 @@ table {
     width: 66px;
     margin: auto;
     background-image: url("../img/santa.gif");
+}
 
+tr.striped {
+    background-color: #7da9c4;
 }
