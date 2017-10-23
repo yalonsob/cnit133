@@ -185,3 +185,12 @@ table {
     background-color: #7da9c4;
     color: white;
 }
+
+.animated-box {
+    background:#7da9c4;
+    height:70px;
+    width: 66px;
+    margin: auto;
+    background-image: url("../img/santa.gif");
+
+}
