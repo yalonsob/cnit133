@@ -8,9 +8,11 @@ for(var i = 5; i <= 20; i += 3) {
     productThirdInteger *= i;
 }
 
-for(var i = 3; i <= 31; i += 4) {
-    sumFourthInteger += i;
-    productFourthInteger *= i;
+var j = 3;
+while (j <= 31) {
+    sumFourthInteger += j;
+    productFourthInteger *= j;
+    j += 4;
 }
 
 document.getElementById('product-third-integer').innerHTML = productThirdInteger;
