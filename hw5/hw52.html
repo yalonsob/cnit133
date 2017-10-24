@@ -26,7 +26,39 @@
         </ul>
     </div>
 
-    Under construction
+    <div class="with-padding">
+        <button id="btn-show-instructions" class="with-padding">Show/Hide instructions</button>
+        <div id="instructions" class="with-padding">
+            Enter a state abbreviation or name (lower or upper case is ok).
+        </div>
+    </div>
+
+    <form class="with-padding">
+        <label for="state-input">State: </label>
+        <input type="text" name="state-input" id="state-input"/>
+        <button id="button-state-info">State Info</button><br>
+        <div id="error-invalid-state" class="error-message">
+            Please, check your input.
+        </div>
+        <table class="with-padding">
+            <tr>
+                <td>Abbreviation:</td>
+                <td><input type="text" name="state-abbreviation" id="state-abbreviation" disabled></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="state-name" id="state-name" disabled><br></td>
+            </tr>
+            <tr>
+                <td>Capital:</td>
+                <td><input type="text" name="capital" id="state-capital" disabled><br></td>
+            </tr>
+            <tr>
+                <td>Population:</td>
+                <td><input type="text" name="population" id="state-population" disabled><br></td>
+            </tr>
+        </table>
+    </form>
 
     <footer>
         <a class="validationLink"
@@ -46,5 +78,6 @@
             >
         </a>
     </footer>
+    <script src="../assets/js/jquery-3.2.1.js"></script>
     <script src="../assets/js/hw5/hw52.js"></script>
 </body>
