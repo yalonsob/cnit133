@@ -40,7 +40,7 @@ function getCategory(salary) {
 $btnAddEmployee.onclick = function (e) {
     e.preventDefault();
 
-    if(isNaN($grossSalesInput.value)) {
+    if(isNaN($grossSalesInput.value) || $grossSalesInput.value == "") {
         $errorMessage.style.display = "block";
         return;
     }

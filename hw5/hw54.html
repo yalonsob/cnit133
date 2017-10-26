@@ -26,7 +26,18 @@
         </ul>
     </div>
 
-    Under construction
+    <form class="with-padding">
+        <label for="number-input">Enter number (between 10 and 100): </label>
+        <input type="text" name="number-input" id="number-input"/>
+        <button id="button-add-number">Add number</button><br>
+        <div><span id="remain-numbers">10</span> numbers left.</div>
+        <button id="button-reset">Reset</button>
+        <div id="error-invalid-number" class="error-message">
+            Please, check your input.
+        </div>
+    </form>
+    <div class="with-padding">Your numbers are:</div>
+    <div id="user-numbers"></div>
 
     <footer>
         <a class="validationLink"
