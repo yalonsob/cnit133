@@ -26,7 +26,27 @@
         </ul>
     </div>
 
-    Under construction
+    <form class="with-padding">
+        <p>Choose your destination (using onChange event handler)</p>
+
+        <select name="destinationList" onChange="goToNewPage(this.form);">
+            <option>Choose Destination:</option>
+            <option value="http://www.google.com/">Google</option>
+            <option value="https://www.ccsf.edu/">CCSF</option>
+            <option value="http://sfgov.org/">SFGOV</option>
+        </select>
+    </form>
+
+
+    <form class="with-padding">
+        <p>Choose your destination (using onClick event handler)</p>
+        <select name="destinationList">
+            <option value="http://www.google.com/">Google</option>
+            <option value="https://www.ccsf.edu/">CCSF</option>
+            <option value="http://sfgov.org/">SFGOV</option>
+        </select>
+        <input type="button" value="Go" onClick="goToNewPage(this.form);">
+    </form>
 
     <footer>
         <a class="validationLink"
