@@ -197,3 +197,19 @@ table {
 tr.striped {
     background-color: #7da9c4;
 }
+
+div.full-section {
+    border-style: groove;
+    border-color: red;
+    width: 350px;
+    margin: auto;
+    display: none;
+
+}
+
+div.flight-ticket {
+    border-style: dashed;
+    background-color: white;
+    width: 400px;
+    margin: 20px auto;
+}

@@ -26,7 +26,35 @@
         </ul>
     </div>
 
-    Under construction
+    <h3>Welcome to CNIT133 Airlines</h3>
+    <p>Type 1 for 'First Class' or 2 for 'Economy' section</p>
+    <form class="with-padding">
+        <label for="plane-section">Select section: </label>
+        <input type="text" name="plane-section" id="plane-section"/>
+        <button id="button-boarding-pass">Get boarding pass</button><br>
+        <div id="error-invalid-section" class="error-message">
+            Please, check your input.
+        </div>
+        <div class="flight-ticket with-padding">
+            <h4>--CNIT133 Airlines Flight Ticket--</h4>
+            <p>Seat #: <span id="user-seat"></span></p>
+            <p>Section: <span id="user-section"></span></p>
+        </div>
+        <div id="full-section" class="with-padding full-section">
+            <p>We are sorry but this section is already full.</p>
+            <p>Do you want to get a seat in other section?</p>
+            <button id="button-yes">Yes</button><br>
+            <button id="button-no">No</button><br>
+        </div>
+        <div id="error-next-flight" class="error-message">
+            Next flight leaves in 3 hours.
+        </div>
+        <div id="error-full-plane" class="error-message">
+            Sorry! This plane is full.
+        </div>
+        <button id="button-reset">Reset system</button>
+    </form>
+
 
     <footer>
         <a class="validationLink"
