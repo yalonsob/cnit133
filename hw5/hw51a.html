@@ -26,7 +26,32 @@
         </ul>
     </div>
 
-    Under construction
+    <form class="with-padding">
+        <label for="form-input">Name: </label>
+        <input type="text" name="form-input" id="form-input"/>
+        <table class="with-padding">
+            <tr>
+                <td><input type="radio" name="gender" id="male-radio" value="male"> Male <br></td>
+                <td><input type="radio" name="gender" id="female-radio" value="female"> Female <br></td>
+            </tr>
+        </table>
+        <table class="with-padding">
+            <tr>
+                <td><input type="checkbox" name="career" id="study-checkbox" value="study" > I study <br></td>
+                <td><input type="checkbox" name="career" id="work-checkbox" value="work" > I work <br></td>
+            </tr>
+        </table>
+        <div>
+            <select id="form-select">
+                <option disabled selected value> -- select an option -- </option>
+                <option>Fall 2017</option>
+                <option>Spring 2018</option>
+            </select>
+        </div>
+
+        <input type="button" value="Validate" onclick="validateForm()">
+    </form>
+    <div id="validation-response" class="with-padding"></div>
 
     <footer>
         <a class="validationLink"
