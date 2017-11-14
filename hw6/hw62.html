@@ -25,6 +25,26 @@
         </ul>
     </div>
 
+    <form class="with-padding">
+        <div><textarea name="text-complete" id="text-complete"></textarea></div>
+
+        <label for="search-character">Search character: </label>
+        <input type="text" name="search-character" id="search-character"/>
+
+        <button id="button-search-character">Search</button><br>
+        <div id="error-invalid-input" class="error-message">
+            Please, check your input.
+        </div>
+        <button id="button-reset">Reset</button>
+
+        <table class="with-padding">
+            <tr>
+                <td>Number of occurrences:</td>
+                <td><input type="text" name="occurrences" id="occurrences" disabled></td>
+            </tr>
+        </table>
+    </form>
+
 
     <footer>
         <a class="validationLink"
@@ -44,4 +64,5 @@
             >
         </a>
     </footer>
+    <script src="../assets/js/hw6/hw62.js"></script>
 </body>
