@@ -25,6 +25,45 @@
         </ul>
     </div>
 
+    <form class="with-padding">
+
+        <label for="float-number">Floating-point number with at least 4 decimals: </label>
+        <input type="text" name="float-number" id="float-number"/>
+
+        <button id="button-calculate">Calculate</button><br>
+        <div id="error-invalid-float" class="error-message">
+            Please, check your input.
+        </div>
+        <button id="button-reset">Reset</button>
+
+        <table class="with-padding">
+            <tr>
+                <td>Original floating-point number:</td>
+                <td><input type="text" name="original-number" id="original-number" disabled></td>
+            </tr>
+            <tr>
+                <td>Round the floating-point number to the nearest integer:</td>
+                <td><input type="text" name="rounded-integer" id="rounded-integer" disabled></td>
+            </tr>
+            <tr>
+                <td>Calculate the square root of the floating-point number and round it to an integer:</td>
+                <td><input type="text" name="square-root" id="square-root" disabled></td>
+            </tr>
+            <tr>
+                <td>Round the floating-point number to the nearest tenths position:</td>
+                <td><input type="text" name="tenth-position" id="tenth-position" disabled></td>
+            </tr>
+            <tr>
+                <td>Round the floating-point number to the nearest hundredths position:</td>
+                <td><input type="text" name="hundredth-position" id="hundredth-position" disabled></td>
+            </tr>
+            <tr>
+                <td>Round the floating-point number to the nearest thousandths position:</td>
+                <td><input type="text" name="thousandth-position" id="thousandth-position" disabled></td>
+            </tr>
+        </table>
+    </form>
+
 
     <footer>
         <a class="validationLink"
@@ -44,4 +83,5 @@
             >
         </a>
     </footer>
+    <script src="../assets/js/hw6/hw61.js"></script>
 </body>
