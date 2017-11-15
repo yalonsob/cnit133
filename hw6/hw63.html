@@ -25,6 +25,36 @@
         </ul>
     </div>
 
+    <div class="with-padding">
+        - Date toString(): <span id="date-string"></span>
+        - Date toLocaleString(): <span id="date-locale"></span>
+        - Date toUTCString(): <span id="date-utc"></span>
+        - Hours difference between PST and UTC: <span id="pst-utc"></span>
+        - Hours difference between EST and UTC: <span id="est-utc"></span>
+    </div>
+    <form class="with-padding">
+
+        <label for="telephone">Insert telephone number in the format "(999) 999-9999": </label>
+        <input type="text" name="telephone" id="telephone"/>
+
+        <button id="button-split">Split telephone</button><br>
+        <div id="error-invalid-telephone" class="error-message">
+            Please, check your telephone format.
+        </div>
+        <button id="button-reset">Reset</button>
+
+        <table class="with-padding">
+            <tr>
+                <td>Area Code:</td>
+                <td><input type="text" name="area-token" id="area-token" disabled></td>
+            </tr>
+            <tr>
+                <td>Seven-digit phone number:</td>
+                <td><input type="text" name="digits-token" id="digits-token" disabled></td>
+            </tr>
+        </table>
+    </form>
+
 
     <footer>
         <a class="validationLink"
@@ -44,4 +74,5 @@
             >
         </a>
     </footer>
+    <script src="../assets/js/hw6/hw63.js"></script>
 </body>
