@@ -283,6 +283,56 @@ div.flight-ticket {
     font-weight: normal;
 }
 
+.navigation{
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color: #7da9c4;
+    color: white;
+}
+.navigation .hw{
+    display: inline-block;
+    width: auto;
+    font-size: 16px;
+
+}
+.navigation .hw a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 20px 40px;
+}
+
+.navigation .hw:hover {
+    background-color: white;
+}
+
+.navhw2, .navhw3, .navhw4, .navhw5, .navhw6, .navhw7{
+    display: none;
+    position: absolute;
+    z-index:1;
+    overflow:hidden;
+    float: left;
+}
+
+.navhw2 a,.navhw3 a,.navhw4 a,.navhw5 a,.navhw6 a,.navhw7 a{
+    float: none;
+    color: black;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 20px 40px;
+    background-color: white;
+}
+
+.navhw2 a:hover,.navhw3 a:hover,.navhw4 a:hover,.navhw5 a:hover,.navhw6 a:hover,.navhw7 a:hover{
+    background-color: #7da9c4;
+}
+
+.hw:hover .navhw2,.hw:hover .navhw3,.hw:hover .navhw4,.hw:hover .navhw5,.hw:hover .navhw6,.hw:hover .navhw7{
+    display: block;
+}
+
 #container {
     background-color: white;
     width: 100%;
