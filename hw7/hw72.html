@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../assets/styles/styles.css">
 
-    <script src="../assets/js/hw7/hw72.js"></script>
-
     <title>
         HW7
     </title>
@@ -27,7 +25,30 @@
     </ul>
 </div>
 
-Under construction
+<h2>Password Protection Page</h2>
+
+<button id="main-button" type="button" onclick="mainButtonClick()"></button>
+<div id="password-form">
+    <form>
+        <p>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password">
+            <div id="error-message" class="error-message">Incorrect password</div>
+        </p>
+        <p>
+            <input type="button" onclick="checkPassword()" id="submit" value="Submit" >
+            <input type="reset" id="reset" value="Reset" >
+        </p>
+    </form>
+</div>
+
+<div id="container">
+    <div id="red-hotspot" class="hotspot red" onmouseover="changeColor('red')" onmouseout="resetColor()">
+        Stop
+    </div>
+    <div id="yellow-hotspot" class="hotspot yellow" onmouseover="changeColor('yellow')" onmouseout="resetColor()">Caution</div>
+    <div id="green-hotspot" class="hotspot green" onmouseover="changeColor('green')" onmouseout="resetColor()">Go</div>
+</div>
 
 <footer>
     <a class="validationLink"
@@ -47,4 +68,5 @@ Under construction
         >
     </a>
 </footer>
+<script src="../assets/js/hw7/hw72.js"></script>
 </body>
