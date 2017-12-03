@@ -213,3 +213,25 @@ div.flight-ticket {
     width: 400px;
     margin: 20px auto;
 }
+
+.expand-menu .title {
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    color: #013759;
+    font-size: 18px;
+    background-color: white;
+    text-decoration: none;
+    background-color: #7da9c4;
+    color: white;
+}
+
+.expand-menu .title:hover {
+    background-color: #4e6b7c;
+    color: white;
+}
+
+.expand-menu .description {
+    margin-left: 25px;
+}
