@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../assets/styles/styles.css">
 
-    <script src="../assets/js/hw7/hw71.js"></script>
-
     <title>
         HW7
     </title>
@@ -27,7 +25,45 @@
     </ul>
 </div>
 
-Under construction
+<div class="content" id="content">
+    <form>
+        <div class="with-padding">
+            Background Color:
+            <input type="radio" id="color" name="color" value="red"> Red
+            <input type="radio" name="color" value="green"> Green
+        </div>
+        <div class="with-padding">
+            Font Size
+            <select id="font-size">
+                <option value="10">10px</option>
+                <option value="15">15px</option>
+                <option value="30">30px</option>
+            </select>
+        </div>
+        <div class="with-padding">
+            Font Family
+            <select id="font-family">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
+            </select>
+        </div>
+        <div class="with-padding">
+            Font Style
+            <input type="checkbox" id="font-style" name="font-style" value="italic"> Italic
+            <input type="checkbox" name="font-style" value="underline">Underline
+        </div>
+        <div class="with-padding">
+            Font Weight
+            <select id="font-weight">
+                <option value="Normal">Normal</option>
+                <option value="Bold">Bold</option>
+            </select>
+        </div>
+        <button id="button-submit">Submit</button><br>
+        <button id="button-reset">Reset</button><br>
+    </form>
+</div>
 
 <footer>
     <a class="validationLink"
@@ -47,4 +83,5 @@ Under construction
         >
     </a>
 </footer>
+<script src="../assets/js/hw7/hw71.js"></script>
 </body>
