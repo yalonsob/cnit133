@@ -7,6 +7,47 @@
     <title>
         HW8
     </title>
+    <script>
+        function ajaxFunction()
+        {
+            var xmlHttp;
+            xmlHttp=new XMLHttpRequest();
+            xmlHttp.onreadystatechange=function()
+            {
+                if(xmlHttp.readyState==4)
+                {
+                    document.myForm.time.value=xmlHttp.responseText;
+                }
+            }
+            xmlHttp.open("GET","serverTime.php",true);
+            xmlHttp.send(null);
+
+            var xmlHttp1;
+            xmlHttp1=new XMLHttpRequest();
+            xmlHttp1.onreadystatechange=function()
+            {
+                if(xmlHttp1.readyState==4)
+                {
+                    document.myForm.date1.value=xmlHttp1.responseText;
+                }
+            }
+            xmlHttp1.open("GET","serverTime2.php",true);
+            xmlHttp1.send(null);
+
+            var xmlHttp2;
+            xmlHttp2=new XMLHttpRequest();
+            xmlHttp2.onreadystatechange=function()
+            {
+                if(xmlHttp2.readyState==4)
+                {
+                    document.myForm.date2.value=xmlHttp2.responseText;
+                }
+            }
+            xmlHttp2.open("GET","serverTime3.php",true);
+            xmlHttp2.send(null);
+        }
+    </script>
+
 </head>
 <body>
     <header>
@@ -24,7 +65,16 @@
         </ul>
     </div>
 
-    Under construction
+    <div class="with-padding">
+        <form name="myForm">
+            Name: <input type="text"
+                         onfocusout="ajaxFunction();" name="username"><br>
+            Time: <input type="text" name="time"><br>
+            Date (day, date format): <input type="text" name="date1" style="width: 180px;"><br>
+            Date (mm dd yy format): <input type="text" name="date2">
+        </form>
+
+    </div>
 
     <footer>
         <a class="validationLink"
