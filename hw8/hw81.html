@@ -7,6 +7,23 @@
     <title>
         HW8
     </title>
+    <script>
+        function showHint(str) {
+            if (str.length == 0) {
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+            } else {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("txtHint").innerHTML = this.responseText;
+                    }
+                };
+                xmlhttp.open("GET", "gethint.php?q=" + str, true);
+                xmlhttp.send();
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -24,17 +41,18 @@
         </ul>
     </div>
 
-    <ul class="menu">
-        <li class="menuItem"><a href="hw81.html">Part 1 - Get hint</a></li>
-        <li class="menuItem"><a href="hw82.html">Part 2 - </a></li>
-        <li class="menuItem"><a href="hw83.html">Part 3 - </a></li>
-        <li class="menuItem"><a href="hw84.html">Part 4 - </a></li>
-    </ul>
+    <div class="with-padding">
+        <p><b>Start typing a name in the input field below:</b></p>
+        <form>
+            First name: <input type="text" onkeyup="showHint(this.value)">
+        </form>
+        <p>Suggestions: <span id="txtHint"></span></p>
+    </div>
 
     <footer>
         <a class="validationLink"
            target="_blank"
-           href="https://validator.w3.org/nu/hw3.html?doc=https://hills.ccsf.edu/~yalonsob/cnit133/hw8/hw8.html">
+           href="https://validator.w3.org/nu/hw3.html?doc=https://hills.ccsf.edu/~yalonsob/cnit133/hw8/hw81.html">
             <img class="validationImage"
                  src="../assets/img/vhtml5.png"
                  alt="Valid HTML5!"
@@ -42,7 +60,7 @@
         </a>
         <a class="validationLink"
            target="_blank"
-           href="https://jigsaw.w3.org/css-validator/validator?uri=https://hills.ccsf.edu/~yalonsob/cnit133/hw8/hw8.html">
+           href="https://jigsaw.w3.org/css-validator/validator?uri=https://hills.ccsf.edu/~yalonsob/cnit133/hw8/hw81.html">
             <img class="validationImage"
                  src="../assets/img/vcss.gif"
                  alt="Valid CSS!"
