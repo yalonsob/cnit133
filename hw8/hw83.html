@@ -7,6 +7,33 @@
     <title>
         HW8
     </title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+    </script>
+
+    <script>
+        function getVote(int) {
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp=new XMLHttpRequest();
+            } else {  // code for IE6, IE5
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange=function() {
+                if (this.readyState==4 && this.status==200) {
+                    document.getElementById("poll").innerHTML=this.responseText;
+                }
+            }
+            xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+            xmlhttp.send();
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -24,7 +51,18 @@
         </ul>
     </div>
 
-    Under construction
+    <div class="with-padding">
+        <p>Date: <input type="text" id="datepicker"></p>
+    </div>
+    <div id="poll" class="with-padding">
+        <h3>Do you like PHP and AJAX so far?</h3>
+        <form>
+            Yes:
+            <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+            <br>No:
+            <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+        </form>
+    </div>
 
     <footer>
         <a class="validationLink"
