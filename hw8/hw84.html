@@ -7,6 +7,89 @@
     <title>
         HW8
     </title>
+
+    <script>
+
+
+        /* function getPlace
+             parameter: zip code
+             action: create the XMLHttpRequest object, register the handler for onreadystate,
+                     prepare to send the request (with open), and send the request, along
+                     with the zip code, to the serve */
+
+
+        function getPlace(code)   {
+
+
+            /* create an XMLHttpRequest object based on the type of web browser being used.
+            */
+
+
+            var ajaxRequest;  // The variable that makes Ajax possible!
+
+            try{
+                // Opera 8.0+, Firefox, Safari
+                ajaxRequest = new XMLHttpRequest();
+            } catch (e){
+                // Internet Explorer Browsers
+                try{
+                    ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+                } catch (e) {
+                    try{
+                        ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+                    } catch (e){
+                        // Something went wrong
+                        alert("Your browser broke!");
+                        return false;
+                    }
+                }
+            }
+
+
+            /* Register the embedded receiver function as the handler */
+
+
+            ajaxRequest.onreadystatechange = function() {
+
+                /* 4 means that the response has been completed and 200 means the request was successfully
+                    copleted */
+
+                if (ajaxRequest.readyState == 4 && ajaxRequest.status == 200) {
+
+
+                    /* The receiver gets the response text, uses the split method to spearate it into
+                       city and state, and sets the text boxes for city and state to the values received
+
+                       The assignments to the city and state text boxes are placed in selection
+                       constructs to preven the overwriting of user-input city and state names
+                       for the cases  where the zip code was NOT found on the server or the data
+                       from the server was incorrect
+
+                    */
+
+                    var result = ajaxRequest.responseText;
+                    var place = result.split(', ');
+
+                    document.getElementById("name").value = place[0];
+                    document.getElementById("capital").value = place[1];
+                    document.getElementById("population").value = place[2];
+                }
+            }
+
+
+            /* Specify the URL of server-side script that will be used in our Ajax application.
+               Use the send method to send our request to the server. The city and state text
+               boxes pull values from the server from "getCityState.php"
+               without having to reload the entire page! */
+
+
+            ajaxRequest.open("GET", "getState.php?stcode=" + code.toUpperCase());
+            ajaxRequest.send(null);
+
+        }
+
+    </script>
+
 </head>
 <body>
     <header>
@@ -24,7 +107,43 @@
         </ul>
     </div>
 
-    Under construction
+    <div class="with-padding">
+        <form id="myForm" name="myForm" method="post" enctype="text/plain">
+
+            <table>
+
+                <tr>
+                    <td>State Code:</td>
+                    <td><input type="text" onfocusout="getPlace(this.value)" name="code" size="30" autofocus></td>
+                </tr>
+
+
+                <tr>
+                    <td>State Name:</td>
+                    <td><input type="text" name="name" id="name"  size="30" readonly="readonly"></td>
+                </tr>
+
+                <tr>
+                    <td>State Capital:</td>
+                    <td><input type="text" name="capital" id="capital"  size="30" readonly="readonly"></td>
+                </tr>
+
+                <tr>
+                    <td>State Population:</td>
+                    <td><input type="text" name="population" id="population" size="30" readonly="readonly"></td>
+                </tr>
+
+            </table>
+
+
+            <p>
+                <input type="reset" value="Clear form" onClick="window.location.reload();">
+            </p>
+
+
+        </form>
+
+    </div>
 
     <footer>
         <a class="validationLink"
